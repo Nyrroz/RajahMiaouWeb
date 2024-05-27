@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajah's Number Guesser Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rajah's Number Guesser Game</h1>
+        <div id="setup">
+            <p>Player 1, set your secret 4-digit number:</p>
+            <input type="password" id="secret-number" maxlength="4">
+            <button id="set-secret">Set Secret Number</button>
+        </div>
+        <div id="game" style="display: none;">
+            <p>Player 2, guess the 4-digit number:</p>
+            <div id="guess-container">
+                <input type="text" id="guess" maxlength="4" readonly>
+                <div id="keyboard">
+                    <!-- Number buttons will be dynamically added here -->
+                </div>
+            </div>
+            <button id="submit-guess">Submit Guess</button>
+            <div id="feedback"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
